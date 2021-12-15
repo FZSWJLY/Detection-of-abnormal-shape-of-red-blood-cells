@@ -111,7 +111,7 @@ eval.txt Has Writed 69 records!<br>
 
 训练集样本量: 274，验证集样本量: 69
 
-# 三、模型选择、开发、训练和验证
+# 四、模型选择、开发、训练和验证
 此项目使用的是ppyolo中的ppyolo_r18vd_coco.yml模型。
 
 <h2>1.新建label_list.txt文件</h2>
@@ -167,7 +167,7 @@ EvalReader下的batch_size先改为1。<br>
 
 
 ```python
-# 四、模型预测
+# 五、模型预测
 
 %cd /home/aistudio/PaddleDetection/
 !python tools/infer.py -c configs/ppyolo/ppyolo_r18vd_coco.yml\
@@ -188,7 +188,7 @@ EvalReader下的batch_size先改为1。<br>
 
 <img style="display: block; margin: 0 auto;" src="https://ai-studio-static-online.cdn.bcebos.com/fc9dc83de0df4a558c19dfb6098a3eb2d8d3745f66724f06bc1e74cf961714de" width = "50%" height = "50%" />
 
-# 五、总结与升华
+# 六、总结与升华
 
 项目最重要的一步就是训练，训练离不开调参，你得根据具体情况来调整参数。在这过程中，把Train_Reader中的batch_size、snapshot_epoch调高，LearningRate下的base_lr调低，loss越来越大。评测模型也很重要。<br>
 
