@@ -165,10 +165,9 @@ EvalReader下的batch_size先改为1。<br>
 2. 指令多的问题<br>
 只要后面有指令，可以在每个指令最末尾后加\（\前不能加空格，最后一个指令末尾不用加\）。
 
-
-```python
 # 五、模型预测
 
+```python
 %cd /home/aistudio/PaddleDetection/
 !python tools/infer.py -c configs/ppyolo/ppyolo_r18vd_coco.yml\
 -o weights='output/ppyolo_r18vd_coco/model_final.pdparams'\
